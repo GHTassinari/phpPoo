@@ -34,9 +34,22 @@ class ProdutoDao {
 
     public function update(Produto $p){
 
+        $sql = 'UPDATE Produtos SET nome = ?, descricao =  ? WHERE id = ?';
+
+        $stmt = Conexao::getConn()->prepare($sql);
+        $stmt->bindValue(1, $p->getNome());
+        $stmt->bindValue(2, $p->getDescricao());
+        $stmt->bindValue(3, $p->getId());
+
+        $stmt->execute();
+
     }
 
     public function delete($id){
         
+        $sql = 'DELETE FROM Produtos WHERE id = ?';
+        $stmt = Conexao::getConn()->prepare($sql);
+        $stmt->bindValue(1, $id);
+        $stmt->execute();
     }
 }

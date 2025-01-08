@@ -7,13 +7,21 @@ $produto = new \App\Model\Produto();
 // $produto->setNome('Microfone AT2020'); 
 // $produto->setDescricao('Microfone Condensador');
 
-$produtoDao = new \App\Model\ProdutoDAO();
+$produtoDAO = new \App\Model\ProdutoDAO();
 // Dessa forma, o produto seria criado.
-// $produtoDao->create($produto); 
+// $produtoDAO->create($produto); 
 
 // Dessa forma, seria lido todos os produtos no banco de dados.
-// $produtoDao->read();
+// $produtoDAO->read();
 
 // foreach($produtoDao->read() as $produto):
 //     echo $produto['nome']."<br>".$produto['descricao']."<hr>";
 // endforeach;
+
+// Dessa forma, o primeiro produto que foi inserido no banco seria atualizado
+// $produto->setId(1);
+// $produto->setNome('Cadeira Gamer'); 
+// $produto->setDescricao('Muito confortável');
+// $produtoDAO->update($produto);
+
+$produtoDAO->delete(2);
