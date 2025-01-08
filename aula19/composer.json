@@ -1,0 +1,17 @@
+{
+    "name": "usuario/aula19",
+    "require": {
+        "cocur/slugify": "3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Usuario\\Aula19\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Guilherme Tassinari",
+            "email": "guilhermehen.tassinari@gmail.com"
+        }
+    ]
+}
