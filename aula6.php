@@ -27,7 +27,7 @@ class Itau extends Banco {
 
     public function Depositar($d) {
        $this->saldo += $d;
-       echo "<hr> Depositou: ".$s;
+       echo "<hr> Depositou: ".$d;
     }
 
 }
