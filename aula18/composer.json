@@ -1,0 +1,18 @@
+{
+    "name": "nodestudio/composer",
+    "description": "Teste composer",
+    "require": {
+        "pagseguro/pagseguro-php-sdk": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nodestudio\\Composer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Guilherme Tassinari",
+            "email": "guilhermehen.tassinari@gmail.com"
+        }
+    ]
+}
